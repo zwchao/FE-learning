@@ -1,0 +1,91 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+$maincolor:#f5294c;
+
+
+.contannier{
+  min-height: 100%;
+  background-color: #ee0a3b;
+  position: relative;
+  font-size: 12px;
+  padding: .133333rem;
+
+}
+.top{
+    text-align: center;
+
+    img{
+        width: 9.5rem;
+    }
+}
+
+.shop-item{
+    width: 100%;
+    position: relative;
+    padding: .133333rem 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-bottom: 1px;
+
+}
+.shop-img{
+    img{
+         width: 2.4rem;
+         height: 2.4rem;
+    }
+     width: 2.4rem;
+     height: 2.4rem;
+
+}
+.shop-intro{
+    width: 133.333333rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+.shop-title{
+
+}
+.shop-price{
+    padding: .15rem 0 .2rem;
+
+}
+.shop-11{
+    background-color: #ee0a3b;
+    border-radius: .026667rem;
+    padding: .026667rem .08rem .013333rem;
+    color: #fff;
+    font-weight: 700;
+    margin-right: .066667rem;
+    font-size: 11px;
+
+}
+.shop-sale{
+    color: $maincolor;
+    font-size: 16px;
+}
+.shop-num{
+    font-size: 12px;
+    color: #ff3600;
+
+}
+.shop-buybtn{
+  width: 2.133333rem;
+  height: .64rem;
+  position: absolute;
+  bottom: .133333rem;
+  right: .2rem;
+  border-radius: .026667rem; 
+  line-height: .64rem;
+  background-color: #ee0a3b;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
