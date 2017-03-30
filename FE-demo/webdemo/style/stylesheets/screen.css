@@ -67,25 +67,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .contannier {
   min-height: 100%;
   background-color: #ee0a3b;
   position: relative;
-  font-size: 12px;
   padding: .133333rem;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .top {
   text-align: center;
 }
-/* line 23, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .top img {
-  width: 10rem;
+  width: 9.5rem;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .shop-item {
   width: 100%;
   position: relative;
@@ -96,30 +95,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 1px;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .shop-img {
   width: 2.4rem;
   height: 2.4rem;
 }
-/* line 39, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .shop-img img {
   width: 2.4rem;
   height: 2.4rem;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .shop-intro {
   width: 133.333333rem;
   padding-left: .2rem;
   padding-right: .2rem;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
+.shop-title {
+  color: #000;
+}
+/* line 12, ../sass/screen.scss */
+[data-dpr="1"] .shop-title {
+  font-size: 14px;
+}
+/* line 15, ../sass/screen.scss */
+[data-dpr="2"] .shop-title {
+  font-size: 28px;
+}
+/* line 18, ../sass/screen.scss */
+[data-dpr="3"] .shop-title {
+  font-size: 42px;
+}
+
+/* line 72, ../sass/screen.scss */
 .shop-price {
   padding: .15rem 0 .2rem;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .shop-11 {
   background-color: #ee0a3b;
   border-radius: .026667rem;
@@ -127,22 +143,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   font-weight: 700;
   margin-right: .066667rem;
+}
+/* line 12, ../sass/screen.scss */
+[data-dpr="1"] .shop-11 {
   font-size: 11px;
 }
+/* line 15, ../sass/screen.scss */
+[data-dpr="2"] .shop-11 {
+  font-size: 22px;
+}
+/* line 18, ../sass/screen.scss */
+[data-dpr="3"] .shop-11 {
+  font-size: 33px;
+}
 
-/* line 69, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .shop-sale {
   color: #f5294c;
+}
+/* line 12, ../sass/screen.scss */
+[data-dpr="1"] .shop-sale {
   font-size: 16px;
 }
-
-/* line 73, ../sass/screen.scss */
-.shop-num {
-  font-size: 12px;
-  color: #ff3600;
+/* line 15, ../sass/screen.scss */
+[data-dpr="2"] .shop-sale {
+  font-size: 32px;
+}
+/* line 18, ../sass/screen.scss */
+[data-dpr="3"] .shop-sale {
+  font-size: 48px;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
+.shop-num {
+  color: #ff3600;
+}
+/* line 12, ../sass/screen.scss */
+[data-dpr="1"] .shop-num {
+  font-size: 12px;
+}
+/* line 15, ../sass/screen.scss */
+[data-dpr="2"] .shop-num {
+  font-size: 24px;
+}
+/* line 18, ../sass/screen.scss */
+[data-dpr="3"] .shop-num {
+  font-size: 36px;
+}
+
+/* line 95, ../sass/screen.scss */
 .shop-buybtn {
   width: 2.133333rem;
   height: .64rem;
@@ -155,5 +204,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   color: #fff;
   font-weight: 700;
+}
+/* line 12, ../sass/screen.scss */
+[data-dpr="1"] .shop-buybtn {
   font-size: 14px;
+}
+/* line 15, ../sass/screen.scss */
+[data-dpr="2"] .shop-buybtn {
+  font-size: 28px;
+}
+/* line 18, ../sass/screen.scss */
+[data-dpr="3"] .shop-buybtn {
+  font-size: 42px;
 }

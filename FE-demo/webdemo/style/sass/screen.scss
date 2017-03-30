@@ -8,12 +8,27 @@
 
 $maincolor:#f5294c;
 
+@mixin data-dpr($filed,$val){
+    [data-dpr="1"] & {
+        #{$filed}: $val;
+    }
+    [data-dpr="2"] & {
+        #{$filed}: $val * 2;
+    }
+    [data-dpr = "3"] & {
+        #{$filed}: $val * 3;
+    }
+}
+
+@mixin font-size($size){
+    @include data-dpr("font-size",  $size);
+}
+
 
 .contannier{
   min-height: 100%;
   background-color: #ee0a3b;
   position: relative;
-  font-size: 12px;
   padding: .133333rem;
 
 }
@@ -21,7 +36,7 @@ $maincolor:#f5294c;
     text-align: center;
 
     img{
-        width: 10rem;
+        width: 9.5rem;
     }
 }
 
@@ -50,6 +65,8 @@ $maincolor:#f5294c;
     padding-right: .2rem;
 }
 .shop-title{
+    @include font-size(14px);
+    color: #000;
 
 }
 .shop-price{
@@ -63,15 +80,15 @@ $maincolor:#f5294c;
     color: #fff;
     font-weight: 700;
     margin-right: .066667rem;
-    font-size: 11px;
+   @include font-size(11px);
 
 }
 .shop-sale{
     color: $maincolor;
-    font-size: 16px;
+   @include font-size(16px);
 }
 .shop-num{
-    font-size: 12px;
+    @include font-size(12px);
     color: #ff3600;
 
 }
@@ -87,5 +104,5 @@ $maincolor:#f5294c;
   text-align: center;
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  @include font-size(14px);
 }
