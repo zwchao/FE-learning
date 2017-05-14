@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="plugs/css/posterTvGrid.css">
+    <link rel="stylesheet" href="plugs/scroll/css/animate.min.css">
+    <script src="plugs/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="plugs/js/posterTvGrid.js" type="text/javascript"></script>
+    <script type="text/javascript" src="plugs/scroll/dist/scrolla.jquery.min.js"></script>
+
+
+
+    <title>爱驻夕阳</title>
+</head>
+<body>
+    <header>
+    <div class="left-logo"></div>
+    <div class="mid-title"><h2>爱驻夕阳</h2></div>
+    <div class="login"><a href="./pages/signup.html" target="_blank">登录</a></div>
+    <div class="reg"><a href="./pages/login.html" target="_blank">注册</a></div>
+   </header>
+<nav>
+        <ul>
+            <li><a href="##">首页</a></li>
+            <li><a href="##">服务团队</a></li>
+            <li><a href="##">服务项目</a></li>
+            <li><a href="##">咨询流程</a></li>
+            <li><a href="##">合作伙伴</a></li>
+            <li><a href="./pages/info.html">资讯推送</a></li>
+            <li><a href="##">关于我们</a></li>
+            <li class="move"></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div id="posterTvGrid" style="margin:0 auto 0 auto;"></div>
+    </div>
+    <div class="studentinfo">
+        <div class="stuinfo animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">优秀服务团队</div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+            <img src="./imgs/info1.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+            <img src="./imgs/info2.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+            <img src="./imgs/info3.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+            <img src="./imgs/info4.png" alt="">
+        </div> 
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+            <img src="./imgs/info5.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+             <img src="./imgs/info6.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+             <img src="./imgs/info7.png" alt="">
+        </div>
+        <div class="stucommon animate"  data-animate="rubberBand" data-duration="1.0s" data-delay="0.1s" data-iteration="1">
+             <img src="./imgs/info8.png" alt=""></div>   
+    </div>
+    <div class="content">
+        <div class="hot">
+            <img src="./imgs/hot.png" alt="每日热文">
+        </div>
+        <div class="fm">
+            <a href="http://fm.xinli001.com/99390473" target="_blank"><img src="./imgs/fm.png" alt="心理FM"></a>
+        </div>
+        <div class="zixun">
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>用户协议</li>
+            <li>咨询服务规则</li>
+            <li>法律声明</li>
+            <li>意见建议</li>
+        </ul>
+        <div class="copy">Copyright© 2017-2017南京信息工程大学爱驻夕阳网站</div>
+    </footer>
+</body>
+<script type="text/javascript">
+    var posterTvGrid = new posterTvGrid('posterTvGrid',{className: "posterTvGrid"},[
+        {"img":"imgs\/1.jpg","title":"students","url":"#"},
+        {"img":"imgs\/2.jpg","title":"students","url":"#"},
+        {"img":"imgs\/3.jpg","title":"students","url":"#"},
+        {"img":"imgs\/4.jpg","title":"students","url":"#"},
+        {"img":"imgs\/5.jpg","title":"students","url":"#"}      
+    ]);
+
+    $('.animate').scrolla({
+    mobile: false, // disable animation on mobiles 
+    once: false // only once animation play on scroll
+});               
+</script>
+</html>
+

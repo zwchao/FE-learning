@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner-background{
+    width: 63%;
+    height: 600px;
+    background-color: #eee;
+    border-radius: 5px;
+    position: absolute;
+    top: 150px;
+    left: 16%;
+}
+.banners{
+    width: 60%;
+    height: 480px;
+   list-style: none;
+   border: 2px solid #eee;
+   border-radius: 3px;
+}
+.banner{
+    width: 60%;
+    height: 480px;
+
+}
+#banner1,#banner2,#banner3{
+    position: absolute;
+}
+#banner1{
+    z-index: 10;
+}
+#banner2{
+    z-index: 9;
+}
+#banner3{
+    z-index: 8;
+}
+
+.banner-img{
+    width: 100%;
+    height: 480px;
+    float: left;
+}
+
+.wezi1{
+    color: #4E3A4F;
+    font-size: 24px;
+    display: inline-block;
+    width: 80%;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-color: #ddd;
+}
+
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #e53c5c;
+  color: #4E3A4F;
+  position: absolute;
+  top: 0;
+
+}
+/* line 21, ../sass/screen.scss */
+header .left-logo {
+  float: left;
+  height: 60px;
+  width: 60px;
+  background: url(../../imgs/2222.png) no-repeat left;
+  background-size: 100% 100%;
+}
+/* line 30, ../sass/screen.scss */
+header .mid-title {
+  width: 20%;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 35%;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 41, ../sass/screen.scss */
+header .login {
+  width: 60px;
+  height: 30px;
+  background-color: #e53c5c;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+}
+header .login a{
+    text-decoration: none;
+    color: #fff;
+}
+/* line 54, ../sass/screen.scss */
+header .login:hover {
+  background-color: #E31212;
+  font-weight: bold;
+}
+/* line 61, ../sass/screen.scss */
+header .reg {
+  width: 60px;
+  height: 30px;
+  background-color: #e53c5c;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+/* line 74, ../sass/screen.scss */
+header .reg:hover {
+  background-color: #E31212;
+  font-weight: bold;
+}
+
+
+.loginform{
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    width: 30%;
+    left: 45%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding:20px;
+    background-color: #fff;
+    text-align: right;
+}
+
+.top{
+    text-align: center;
+    color: #4E3A4F;
+    font-size: 30px; 
+}
+#username,#phone,#mail,#weather,#healthcare,#desease,#policy
+{
+    width: 310px;
+    height: 46px;
+    border:2px solid #e53c5c;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.but button{
+    margin-top: 20px;
+    width: 310px;
+    height: 34px;
+}
+
+

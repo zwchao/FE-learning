@@ -1,0 +1,307 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+}
+
+/* line 14, ../sass/screen.scss */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  color: #4E3A4F;
+  position: relative;
+}
+/* line 21, ../sass/screen.scss */
+header .left-logo {
+  float: left;
+  height: 80px;
+  width: 80px;
+  background: url(../../imgs/2222.png) no-repeat left;
+}
+/* line 30, ../sass/screen.scss */
+header .mid-title {
+  width: 20%;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 30%;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 41, ../sass/screen.scss */
+header .login {
+  width: 60px;
+  height: 30px;
+  background-color: #e53c5c;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+header .login a{
+    text-decoration: none;
+    color: #fff;
+}
+/* line 54, ../sass/screen.scss */
+header .login:hover {
+  background-color: #E31212;
+  font-weight: bold;
+}
+/* line 61, ../sass/screen.scss */
+header .reg {
+  width: 60px;
+  height: 30px;
+  background-color: #e53c5c;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+header .reg a{
+    text-decoration: none;
+    color: #fff;
+}
+/* line 74, ../sass/screen.scss */
+header .reg:hover {
+  background-color: #E31212;
+  font-weight: bold;
+}
+
+/* line 84, ../sass/screen.scss */
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #ddd;
+  position: relative;
+}
+/* line 90, ../sass/screen.scss */
+nav ul {
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 15%;
+}
+/* line 97, ../sass/screen.scss */
+nav ul li {
+  display: inline-block;
+  width: 10%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 104, ../sass/screen.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #4E3A4F;
+}
+/* line 110, ../sass/screen.scss */
+nav ul .move {
+  position: absolute;
+  border-top: 2px solid #E31212;
+  left: 0;
+  top: 30px;
+  -webkit-transition: left 0.4s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+}
+
+/* line 125, ../sass/screen.scss */
+nav ul li:nth-child(1):hover ~ .move {
+  left: 0;
+}
+
+/* line 128, ../sass/screen.scss */
+nav ul li:nth-child(2):hover ~ .move {
+  left: 10%;
+}
+
+/* line 131, ../sass/screen.scss */
+nav ul li:nth-child(3):hover ~ .move {
+  left: 20%;
+}
+
+/* line 134, ../sass/screen.scss */
+nav ul li:nth-child(4):hover ~ .move {
+  left: 31%;
+}
+
+/* line 137, ../sass/screen.scss */
+nav ul li:nth-child(5):hover ~ .move {
+  left: 42%;
+}
+
+/* line 140, ../sass/screen.scss */
+nav ul li:nth-child(6):hover ~ .move {
+  left: 52%;
+}
+
+/* line 143, ../sass/screen.scss */
+nav ul li:nth-child(7):hover ~ .move {
+  left: 62%;
+}
+
+/* line 147, ../sass/screen.scss */
+.banner {
+  width: 100%;
+  height: 380px;
+  background-color: #e53c5c;
+  padding-top: 100px;
+}
+
+/* line 154, ../sass/screen.scss */
+.studentinfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 163, ../sass/screen.scss */
+.stucommon {
+  margin: 10px;
+  width: 23%;
+  height: 450px;
+}
+.stuinfo{
+  width: 100%;
+  height: 50px;
+  color: #4E3A4F;
+  font-size: 48px;
+  text-align: center;
+  margin: 20px 0;
+}
+.content{
+  width: 100%;
+  height: 750px;
+  position: relative;
+  background-color: #ddd;
+}
+.hot{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.fm{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.zixun{
+  background-image: url(../../imgs/zixun.png);
+  background-repeat: no-repeat;
+  background-size: 130% 230%;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 400px;
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #3a3a3a;
+  color: #ddd;
+  position: relative;
+}
+
+footer ul{
+  width: 65%;
+  height: 100px;
+  position: absolute;
+  display: inline-block;
+ top: 50px;
+ left: 30%;
+}
+footer ul li{
+  width: 15%;
+  display: inline-block;
+}
+
+.copy{
+  width: 50%;
+  position: absolute;
+  left: 33%;
+  bottom: 70px;
+}

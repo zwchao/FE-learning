@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../plugs/js/jquery-3.2.0.js" type="text/javascript"></script>
+    <script src="../plugs/js/template-native.js" type="text/javascript"></script>
+    <script type="text/template" id="templateId">
+	<%for(var i=0;i<list.length;i++){%>
+		<tr>
+			<td><%=list[i].date%></td>
+			<td><img src="<%=list[i].dayPictureUrl%>"></td>
+			<td><img src="<%=list[i].nightPictureUrl%>"></td>
+			<td><%=list[i].temperature%></td>
+			<td><%=list[i].weather%></td>
+			<td><%=list[i].wind%></td>
+		</tr>
+	<%}%>
+</script>
+    <link rel="stylesheet" type="text/css" href="../style/stylesheets/info.css">
+    <title>资讯推送</title>
+</head>
+<body>
+   <main>
+
+    <header>
+    <div class="left-logo"></div>
+    <div class="mid-title"><h2>爱驻夕阳</h2></div>
+   </header>
+
+    <div class="loginmain">
+
+    <div class="banner-background">
+        <ul class="banners">
+            <li class="banner" id="banner1">
+                
+            </li>
+             <li class="banner" id="banner2">
+                <a href="#">
+                    <img src="../imgs/warm2.jpg" alt="温馨图片" class="banner-img">
+                     <span class="wezi1">爱驻夕阳b</span>
+                </a>
+            </li>
+             <li class="banner" id="banner3">
+                
+            </li>
+        </ul>
+
+    </div>
+    <div class="loginform" id="app1">
+        <form action="#" method="POST" id="regForm">
+            <div class="top">欢迎使用咨询推送系统</div>
+            <div>
+                <label for="weather">天气状况:</label>
+                <input type="text" id="weather" placeholder="请输入当前用户所在城市">
+                <table id="getweather"></table>
+            </div>
+            <div>
+                <label for="healthcare">保健护理:</label>
+                <input type="text" id="healthcare" placeholder="请输入老人健康护理建议">
+            </div>
+            <div>
+                <label for="desease">疾病预防:</label>
+                <input type="text" id="desease" placeholder="请输入当前疾病预防建议">
+            </div>
+            <div>
+                <label for="policy">养老政策:</label>
+                <input type="text" id="policy" placeholder="请输入政府养老政策">
+            </div>
+            <div>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" placeholder="请输入用户名">
+            </div>
+             <div>
+                <label for="phone">手机号码:</label>
+                <input type="text" id="phone" placeholder="请输入手机号码">
+            </div>
+             <div>
+                <label for="mail">电子邮箱:</label>
+                <input type="e-mail" id="mail" placeholder="请输入邮箱地址">
+            </div>
+            <div class="but">
+                <button type="submit">推送</button>
+            </div>
+        </form>
+    </div>
+</div>
+</main>
+<script>
+    $(function(){
+        $("#weather").blur(function(){
+            var cityname = document.querySelector("#weather").value;
+            $.ajax({
+                url:"http://api.map.baidu.com/telematics/v3/weather",
+                type:"get",
+                data:{
+                    location:cityname,
+                    output:'json',
+                    ak:'6tYzTvGZSOpYB5Oc2YGGOKt8'
+                },
+                dataType:"jsonp",
+                success:function(data){
+                    console.log(data);
+                    var weatherData = data.results[0].weather_data;
+                    var obj = {
+                        list:weatherData
+                    };
+                    var html =template("templateId",obj);
+                    document.querySelector("table").innerHTML=html;
+                }
+            })
+        })
+        $(".but").click(function(){
+            alert("推送成功！");
+        })
+    })
+</script>
+</body>
+</html>
