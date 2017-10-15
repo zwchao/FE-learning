@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/fullPage.js/2.9.4/jquery.fullpage.css">
+    <title>My Resume</title>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section">
+                <section id="home">
+                        <div class="personal-img"></div>
+                        <div class="bio">
+                            <p class="name">晁中伟</p>
+                            <p class="tel">13260816032</p>
+                            <p class="github"><a href="https://github.com/zwchao">github地址</a></p>
+                        </div>
+                    </section>
+        </div>
+
+        <div class="section">
+            <h1>校内经历</h1>
+                <section id="about">
+                         <div class="slide">
+                                <h1>2014年9月-2015年8月</h1>
+                                <h2 id="chap1">大一</h2>
+                                <p>获得校三等奖学金，
+                                优秀共青团员，
+                                三好学生，
+                                校级多米诺骨牌图纸设计大赛二等奖
+                                参加暑期三下乡活动，探访合肥</p>
+                         </div>
+                         <div class="slide">
+                                <h1>2015年9月-2016年8月</h1>
+                                <h2 id="chap2">大二</h2>
+                                <p>任职科协信息部部长，部门共有15人，相处融洽。任职期间负责学校迎新晚会的海报和宣传视频制作，对PS和AE较为熟悉。通过一年的锻炼，所在部门获得优秀部门
+                                    主办的“致匠心”电子DIY文化大赛，被评为优秀活动，并在校园官方微信平台展示成果。大二期间，还获得校级电子设计大赛一等奖，个人主要负责超声波测距模块的
+                                    硬件设计和搭建。
+                                </p>
+                         </div>
+                         <div class="slide">
+                                <h1>2016年9月-2017年8月</h1>
+                                <h2 id="chap3">大三</h2>
+                                <p>任职科协主席，组织共有75人，相处融洽。任职期间负责学院科协的常规工作，学会了与老师和部门成员的沟通。期间，举办一次科技文化节，包含将近10个活动，前后
+                                    花费时间1个月。举办两次专利创新大赛，深受学院老师同学好评，学校科技处颁发优秀组织奖。学习方面获得校级二等奖学金。
+                                </p>
+                    
+                         </div>
+                         <div class="slide">
+                                <h1>2017年9月-至今</h1>
+                                <h2 id="chap4">大四</h2>
+                                <p>
+                                    准备找工作
+                                </p>
+                         </div>
+                         
+                     </section>
+        </div>
+       
+
+        <div class="section">
+                <section id="protfolio">
+                        <h2>项目经历</h2>
+                        <ul>
+                            <li><a href="#work1" class="protoflio-link">学院官网页面重构</a></li>
+                            <li><a href="#work2" class="protoflio-link">“5.20”H5页面</a></li>
+                            <li><a href="#work3" class="protoflio-link">React评论组件</a></li>
+                            <li><a href="#work4" class="protoflio-link">个人博客</a></li>
+                        </ul>
+                        <article id="work1">
+                            <img src="img/work1.jpg" alt="学院官网重构页面">
+                            <h1>学院官网页面重构</h1>
+                            <p>项目简介: 主要是对学院官网的重新设计，包括样式配色轮播图等。利用sass和flex技术重写了样式，利用JavaScript原生技术实现了轮播图。</p>
+                        </article>
+                        <article id="work2">
+                                <img src="img/work2.jpg" alt="“5.20”H5页面">
+                                <h1>“5.20”H5页面</h1>
+                                <p>项目简介:利用jquery、css3、html5等技术实现了一个H5页面，包含css3动画，适应移动端。</p>
+                        </article>
+                        <article id="work3">
+                                <img src="img/work3.jpg" alt="React评论组件">
+                                <h1>React评论组件</h1>
+                                <p>项目简介:利用react这个框架，实现了类似朋友圈评论的组件，包含评论列表，熟悉了父子组件之间传递数据。同时开发了redux版本，同时使用localstorge技术，实现数据持久化。</p>
+                        </article>
+                        <article id="work4">
+                                <img src="img/work4.jpg" alt="个人博客">
+                                <h1>个人博客</h1>
+                                <p>项目简介:前端采用react，后端采用express,数据库采用mongodb，前后端通信采用fetch.利用以上技术实现了一个前后端完全分离的项目，项目包含登陆、注册、登出、发表修改删除文章、发表修改删除留言等功能。</p>
+                        </article>
+                
+                        <div id="popup">
+                                <div id="popup-content">
+                                  <button id="close">Close me</button>
+                                  <div id="popup-holder"></div>
+                                </div>
+                                <div id="popup-bg"></div>
+                              </div>
+                    </section>
+        </div>
+
+        <div class="section">
+            <section id="judge">
+        <h1>自我评价</h1>
+        <p>熟练掌握HTML、CSS技术，能实现像素级别的还原页面。 熟悉JavaScript、jquery技术，能利用jquery实现页面动态效果，同时了解前后端分离，利用AJAX技术实现跨域访问。 了解移动端自适应布局，利用flexiable.js实现移动端适配。了解react.js这个mvvm框架。 了解node.js,使用express开发过后端服务器。 英语通过四六级，具备基本的英文文档的阅读能力。注重团队合作了解git。  </p>
+        </section>
+        </div>
+    
+   
+    </div>
+    
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.staticfile.org/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
